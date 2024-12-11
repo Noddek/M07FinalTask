@@ -19,6 +19,7 @@ namespace M07FinalTask.N20ProgramCode
         public static void ManagerServiceMenu()
         {
             // GREETING THE MANAGER
+
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine($"\nDear manager, please select a menu option from the list: \n\t1. View all orders. \n\t2. [NOT IMPLEMENTED]\n");
             Console.ResetColor();
@@ -39,6 +40,7 @@ namespace M07FinalTask.N20ProgramCode
                 {
                     Console.WriteLine($"\tToo many tries. The program closes and will be restarted.\n");
                     GeneralStuff.PauseAndRestartTheProgram(10);
+                    return;
                 }
                 else
                 {

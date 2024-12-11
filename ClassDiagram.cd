@@ -1,28 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="M07FinalTask.N01RawData.Enumerations.CommonEnums" Collapsed="true">
-    <Position X="18.5" Y="0.5" Width="1.5" />
+    <Position X="16" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAQAAgAACAAAAAIAAAAAAAAAAAAAAAgAAQAAAAA=</HashCode>
       <FileName>N01RawData\Enumerations\CommonEnums.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="M07FinalTask.N01RawData.Enumerations.LaptopEnums" Collapsed="true">
-    <Position X="18.5" Y="1.25" Width="1.5" />
+    <Position X="16" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAQAAAAAAAAAAAEAAAA=</HashCode>
       <FileName>N01RawData\Enumerations\LaptopEnums.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="M07FinalTask.N01RawData.Enumerations.MonitorEnums" Collapsed="true">
-    <Position X="18.5" Y="2" Width="1.5" />
+    <Position X="16" Y="4.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AABACAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
       <FileName>N01RawData\Enumerations\MonitorEnums.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="M07FinalTask.N01RawData.RawData" Collapsed="true">
-    <Position X="18.5" Y="2.75" Width="1.5" />
+    <Position X="16" Y="5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAEAAAAAABIAAAAAAAAEAAAAAAAAAAAAMAQAAAAAAAA=</HashCode>
       <FileName>N01RawData\RawData.cs</FileName>
@@ -228,70 +228,70 @@
     </TypeIdentifier>
   </Class>
   <Class Name="M07FinalTask.N08StoreStaff.Manager" Collapsed="true">
-    <Position X="0.5" Y="9.25" Width="1.5" />
+    <Position X="0.5" Y="8.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>N08StoreStaff\Manager.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="M07FinalTask.N11Contacts.Address" Collapsed="true">
-    <Position X="18.5" Y="4.5" Width="1.5" />
+    <Position X="16" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAggAAAAAIIAACAAAAAAIAAAAAAAIAQACAAAI=</HashCode>
       <FileName>N11Contacts\Address.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="M07FinalTask.N11Contacts.EMail" Collapsed="true">
-    <Position X="18.5" Y="5.25" Width="1.5" />
+    <Position X="16" Y="7.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAgAAAAAAAAAAAAAQAAAgAAAAAAAACAAAACAAA=</HashCode>
       <FileName>N11Contacts\EMail.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="M07FinalTask.N11Contacts.PhoneNumber" Collapsed="true">
-    <Position X="18.5" Y="6" Width="1.5" />
+    <Position X="16" Y="8.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ACAAAABAAAAAAIAAAAAEAQAEAAAAAAAEAAAAAAAAAAA=</HashCode>
       <FileName>N11Contacts\PhoneNumber.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="M07FinalTask.N20ProgramCode.Start" Collapsed="true">
-    <Position X="15" Y="5.25" Width="1.5" />
+    <Position X="12.5" Y="5.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>N20ProgramCode\A1Start.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="M07FinalTask.N20ProgramCode.CodeForMentor" Collapsed="true">
-    <Position X="15" Y="6" Width="1.5" />
+    <Position X="12.5" Y="6" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>N20ProgramCode\B1CodeForMentor.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="M07FinalTask.N20ProgramCode.CodeForCustomer" Collapsed="true">
-    <Position X="15" Y="6.75" Width="1.5" />
+    <Position X="12.5" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAABAAAAAAAAAAAAAAgA=</HashCode>
       <FileName>N20ProgramCode\B2CodeForCustomer.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="M07FinalTask.N20ProgramCode.CodeForManager" Collapsed="true">
-    <Position X="15" Y="7.5" Width="1.5" />
+    <Position X="12.5" Y="7.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>N20ProgramCode\B3CodeForManager.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="M07FinalTask.N20ProgramCode.GeneralStuff" Collapsed="true">
-    <Position X="15" Y="8.25" Width="1.5" />
+    <Position X="12.5" Y="8.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAgAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>N20ProgramCode\C1GeneralStuff.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="M07FinalTask.Program" Collapsed="true">
-    <Position X="15" Y="4.5" Width="1.5" />
+    <Position X="12.5" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>

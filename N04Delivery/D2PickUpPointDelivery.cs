@@ -20,12 +20,14 @@ public class PickUpPointDelivery : IDelivery
     public static PickUpPoint[] pickUpPointsForPickUpPointDelivery = RawData.CreatePickUpPoints();
 
     // PROPERTIES
+
     public string Type { get { return "Pick-up point delivery"; } }
     public DateTime? SendingDate { get; set; }
     public DateTime? FinishDate { get; set; }
     public PickUpPoint PickUpPoint { get; private set; }
 
     // CONSTRUCTOR
+
     public PickUpPointDelivery(PickUpPoint pickUpPoint)
     {
         PickUpPoint = pickUpPoint;

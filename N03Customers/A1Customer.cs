@@ -13,6 +13,7 @@ namespace M07FinalTask.N03Customers;
 public abstract class Customer
 {
     // FIELDS & PROPERTIES
+
     public abstract uint CustomerId { get; protected set; }
     public abstract uint CartId { get; protected set; }
 
@@ -25,6 +26,7 @@ public abstract class Customer
     public CommonEnums.CustomerStatus Status { get; private set; }
 
     // CONSTRUCTORS
+
     public Customer(string login, string password, CommonEnums.CustomerStatus status)
     {
         Login = login;
@@ -33,5 +35,6 @@ public abstract class Customer
     }
 
     // METHODS
+
     public abstract void DisplayFullInfo();
 }

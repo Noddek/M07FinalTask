@@ -19,6 +19,7 @@ namespace M07FinalTask.N05Orders;
 public class Order
 {
     // FIELDS & PROPERTIES
+
     private static uint OrderNumberCounter = 20240000;
     public uint OrderNumber { get; private set; }
     public uint CustomerId { get; private set; }
@@ -41,6 +42,7 @@ public class Order
     public uint PaymentId { get; set; }
 
     // CONSTRUCTORS
+
     public Order(uint customerId, IDelivery delivery, CommonEnums.PromoCode promoCode, string? comment, CommonEnums.PaymentMethod paymentMethod, ProductInOrder[] productsInOrder)
     {
         OrderNumber = ++OrderNumberCounter;
@@ -69,6 +71,7 @@ public class Order
             default: return "Not accepted";
         }
     }
+
     private string ManagerIdToString()
     {
         switch (ManagerId)
@@ -77,6 +80,7 @@ public class Order
             default: return $"{ManagerId}";
         }
     }
+
     private string CreationDateToString()
     {
         switch (CreationDate.Year)
@@ -86,6 +90,7 @@ public class Order
         }
 
     }
+
     private string FinishDateToString()
     {
         switch (FinishDate.Year)
@@ -94,6 +99,7 @@ public class Order
             default: return FinishDate.ToString();
         }
     }
+
     private string IsPaidToString()
     {
         switch (IsPaid)
@@ -102,6 +108,7 @@ public class Order
             default: return "The order is unpaid";
         }
     }
+
     private string PaymentIdToString()
     {
         switch (PaymentId)

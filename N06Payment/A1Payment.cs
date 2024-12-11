@@ -24,6 +24,7 @@ public abstract class Payment
         
 
     // CONSTRUCTORS
+
     // 1. Main constructor
     public Payment(DateTime? paymentDate, decimal totalPayable, ulong cashRegisterMachineNumber, uint cashRegisterReceiptNumber, uint orderNumber)
     {
@@ -33,18 +34,21 @@ public abstract class Payment
         CashRegisterReceiptNumber = cashRegisterReceiptNumber;
         OrderNumber = orderNumber;
     }
+
     // 2. PurchaseReceiptNumber property is specified in addition to the main constructor parameters:
     public Payment (DateTime? paymentDate, decimal totalPayable, ulong cashRegisterMachineNumber, uint cashRegisterReceiptNumber, uint orderNumber, int purchaseReceiptNumber)
         : this (paymentDate, totalPayable, cashRegisterMachineNumber, cashRegisterReceiptNumber, orderNumber)
     {
         PurchaseReceiptNumber = purchaseReceiptNumber;
     }
+
     // 3. TransactionDetails property is specified in addition to the main constructor parameters:
     public Payment(DateTime? paymentDate, decimal totalPayable, ulong cashRegisterMachineNumber, uint cashRegisterReceiptNumber, uint orderNumber, string? transactionDetails)
         : this(paymentDate, totalPayable, cashRegisterMachineNumber, cashRegisterReceiptNumber, orderNumber)
     {
         TransactionDetails = transactionDetails;
     }
+
     // 4. PurchaseReceiptNumber & TransactionDetails properties are specified in addition to the main constructor parameters:
     public Payment(DateTime? paymentDate, decimal totalPayable, ulong cashRegisterMachineNumber, uint cashRegisterReceiptNumber, uint orderNumber, int purchaseReceiptNumber, string? transactionDetails)
         : this(paymentDate, totalPayable, cashRegisterMachineNumber, cashRegisterReceiptNumber, orderNumber)

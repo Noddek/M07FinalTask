@@ -19,12 +19,14 @@ public class ShopDelivery : IDelivery
     public static Shop[] shopsForShopDelivery = RawData.CreateShops();
 
     // PROPERTIES
+
     public string Type { get { return "Shop delivery"; } }
     public DateTime? SendingDate { get; set; }
     public DateTime? FinishDate { get; set; }
     public Shop Shop { get; private set; }
 
     // CONSTRUCTOR
+
     public ShopDelivery (Shop shop)
     {
         Shop = shop;

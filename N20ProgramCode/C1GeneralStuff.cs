@@ -23,6 +23,7 @@ namespace M07FinalTask.N20ProgramCode
             }
             Console.WriteLine();
         }
+
         public static void Pause(byte tacts, string sign)
         {
             for (byte i = 1; i <= tacts; ++i)
@@ -43,12 +44,12 @@ namespace M07FinalTask.N20ProgramCode
         // 3.
         // Task 7. Using of generics
         public class Generics // it is possible to constrain the whole class instead of a method:
-                              // <T> where T : class
+                              // <TClass> where TClass : class
         {
             // Task 11. Using of generic methods.
-            public static bool IsArrayEmpty<T> (T[] someArray) where T : class
+            public static bool IsArrayEmpty<TClass> (TClass[] someArray) where TClass : class
             {
-                foreach (T i in someArray)
+                foreach (TClass i in someArray)
                 // with
                 // for (uint i = 0; i <= someArray.GetUpperBound(0); ++i) 
                 // we have to be sure that the length of the array will not be greater than the uint range

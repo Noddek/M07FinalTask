@@ -38,38 +38,47 @@ public class Monitor : Product<uint>
         ItemNumber = ++MonitorItemNumberCounter;
         Model = model;
     }
+
     private void InitializationScreenSize(MonitorEnums.MonitorScreenSize screenSize)
     {
         ScreenSize = screenSize;
     }
+
     private void InitializationMaxResolution(MonitorEnums.MaxResolution maxResolution)
     {
         MaxResolution = maxResolution;
     }
+
     private void InitializationRefreshRate(MonitorEnums.RefreshRate refreshRate)
     {
         RefreshRate = refreshRate;
     }
+
     private void InitializationVideoInputs(MonitorEnums.VideoInputs videoInputs)
     {
         VideoInputs = videoInputs;
     }
+
     private void InitializationDisplayType(MonitorEnums.DisplayType displayType)
     {
         DisplayType = displayType;
     }
+
     private void InitializationAspectRatio(MonitorEnums.AspectRatio aspectRatio)
     {
         AspectRatio = aspectRatio;
     }
+
     private void InitializationContrastRatio(MonitorEnums.ContrastRatio contrastRatio)
     {
         ContrastRatio = contrastRatio;
     }
+
     private void InitializationBrightness(MonitorEnums.Brightness brightness)
     {
         Brightness = brightness;
     }
+
     private void InitializationPixelResponseTime(MonitorEnums.PixelResponseTime pixelResponseTime)
     {
         PixelResponseTime = pixelResponseTime;
@@ -78,11 +87,13 @@ public class Monitor : Product<uint>
     // B. Constructors:
 
     // I. When only the local property Model is specified:
+
     // 2 parameters: 1 for base property, 1 for local property
     public Monitor(CommonEnums.Brand brand, MonitorEnums.MonitorModel model) : base(brand)
     {
         InitializationItemNumberAndModel(model);
     }
+
     // 3 parameters: 2 for base properties, 1 for local property
     public Monitor
         (
@@ -93,6 +104,7 @@ public class Monitor : Product<uint>
     {
         InitializationItemNumberAndModel(model);
     }
+
     // 4 parameters: 3 for base properties, 1 for local property
     public Monitor
         (
@@ -104,6 +116,7 @@ public class Monitor : Product<uint>
     {
         InitializationItemNumberAndModel(model);
     }
+
     // 5 parameters: 4 for base properties, 1 for local property
     public Monitor
         (
@@ -116,6 +129,7 @@ public class Monitor : Product<uint>
     {
         InitializationItemNumberAndModel(model);
     }
+
     // 6 parameters: 5 for base properties, 1 for local property
     public Monitor
         (
@@ -129,6 +143,7 @@ public class Monitor : Product<uint>
     {
         InitializationItemNumberAndModel(model);
     }
+
     // 7 parameters: 6 for base properties, 1 for local property
     public Monitor
         (
@@ -145,6 +160,7 @@ public class Monitor : Product<uint>
     }
 
     // II. When only the local properties Model and ScreenSize are specified:
+
     // 3 parameters: 1 for base property, 2 for local properties
     public Monitor
         (
@@ -155,6 +171,7 @@ public class Monitor : Product<uint>
     {
         InitializationScreenSize(screenSize);
     }
+
     // 4 parameters: 2 for base properties, 2 for local properties
     public Monitor
         (
@@ -166,6 +183,7 @@ public class Monitor : Product<uint>
     {
         InitializationScreenSize(screenSize);
     }
+
     // 5 parameters: 3 for base properties, 2 for local properties
     public Monitor
         (
@@ -178,6 +196,7 @@ public class Monitor : Product<uint>
     {
         InitializationScreenSize(screenSize);
     }
+
     // 6 parameters: 4 for base properties, 2 for local properties
     public Monitor
         (
@@ -191,6 +210,7 @@ public class Monitor : Product<uint>
     {
         InitializationScreenSize(screenSize);
     }
+
     // 7 parameters: 5 for base properties, 2 for local properties
     public Monitor
         (
@@ -205,6 +225,7 @@ public class Monitor : Product<uint>
     {
         InitializationScreenSize(screenSize);
     }
+
     // 8 parameters: 6 for base properties, 2 for local properties
     public Monitor
         (
@@ -222,6 +243,7 @@ public class Monitor : Product<uint>
     }
 
     // III. When only the local properties Model, ScreenSize and MaxResolution are specified:
+
     // 4 parameters: 1 for base property, 3 for local properties
     public Monitor
         (
@@ -233,6 +255,7 @@ public class Monitor : Product<uint>
     {
         InitializationMaxResolution(maxResolution);
     }
+
     // 5 parameters: 2 for base properties, 3 for local properties
     public Monitor
         (
@@ -245,6 +268,7 @@ public class Monitor : Product<uint>
     {
         InitializationMaxResolution(maxResolution);
     }
+
     // 6 parameters: 3 for base properties, 3 for local properties
     public Monitor
         (
@@ -258,6 +282,7 @@ public class Monitor : Product<uint>
     {
         InitializationMaxResolution(maxResolution);
     }
+
     // 7 parameters: 4 for base properties, 3 for local properties
     public Monitor
         (
@@ -272,6 +297,7 @@ public class Monitor : Product<uint>
     {
         InitializationMaxResolution(maxResolution);
     }
+
     // 8 parameters: 5 for base properties, 3 for local properties
     public Monitor
         (
@@ -287,6 +313,7 @@ public class Monitor : Product<uint>
     {
         InitializationMaxResolution(maxResolution);
     }
+
     // 9 parameters: 6 for base properties, 3 for local properties
     public Monitor
         (
@@ -305,6 +332,7 @@ public class Monitor : Product<uint>
     }
 
     // IV. When only the local properties Model, ScreenSize, MaxResolution and RefreshRate are specified:
+
     // 5 parameters: 1 for base property, 4 for local properties
     public Monitor
         (
@@ -317,6 +345,7 @@ public class Monitor : Product<uint>
     {
         InitializationRefreshRate(refreshRate);
     }
+
     // 6 parameters: 2 for base properties, 4 for local properties
     public Monitor
         (
@@ -330,6 +359,7 @@ public class Monitor : Product<uint>
     {
         InitializationRefreshRate(refreshRate);
     }
+
     // 7 parameters: 3 for base properties, 4 for local properties
     public Monitor
         (
@@ -344,6 +374,7 @@ public class Monitor : Product<uint>
     {
         InitializationRefreshRate(refreshRate);
     }
+
     // 8 parameters: 4 for base properties, 4 for local properties
     public Monitor
         (
@@ -359,6 +390,7 @@ public class Monitor : Product<uint>
     {
         InitializationRefreshRate(refreshRate);
     }
+
     // 9 parameters: 5 for base properties, 4 for local properties
     public Monitor
         (
@@ -375,6 +407,7 @@ public class Monitor : Product<uint>
     {
         InitializationRefreshRate(refreshRate);
     }
+
     // 10 parameters: 6 for base properties, 4 for local properties
     public Monitor
         (
@@ -394,6 +427,7 @@ public class Monitor : Product<uint>
     }
 
     // V. When only the local properties Model, ScreenSize, MaxResolution, RefreshRate and VideoInputs are specified:
+
     // 6 parameters: 1 for base property, 5 for local properties
     public Monitor
         (
@@ -407,6 +441,7 @@ public class Monitor : Product<uint>
     {
         InitializationVideoInputs(videoInputs);
     }
+
     // 7 parameters: 2 for base properties, 5 for local properties
     public Monitor
         (
@@ -421,6 +456,7 @@ public class Monitor : Product<uint>
     {
         InitializationVideoInputs(videoInputs);
     }
+
     // 8 parameters: 3 for base properties, 5 for local properties
     public Monitor
         (
@@ -436,6 +472,7 @@ public class Monitor : Product<uint>
     {
         InitializationVideoInputs(videoInputs);
     }
+
     // 9 parameters: 4 for base properties, 5 for local properties
     public Monitor
         (
@@ -452,6 +489,7 @@ public class Monitor : Product<uint>
     {
         InitializationVideoInputs(videoInputs);
     }
+
     // 10 parameters: 5 for base properties, 5 for local properties
     public Monitor
         (
@@ -469,6 +507,7 @@ public class Monitor : Product<uint>
     {
         InitializationVideoInputs(videoInputs);
     }
+
     // 11 parameters: 6 for base properties, 5 for local properties
     public Monitor
         (
@@ -489,6 +528,7 @@ public class Monitor : Product<uint>
     }
 
     // VI. When only the local properties Model, ScreenSize, MaxResolution, RefreshRate, VideoInputs and DisplayType are specified:
+
     // 7 parameters: 1 for base property, 6 for local properties
     public Monitor
         (
@@ -503,6 +543,7 @@ public class Monitor : Product<uint>
     {
         InitializationDisplayType(displayType);
     }
+
     // 8 parameters: 2 for base properties, 6 for local properties
     public Monitor
         (
@@ -518,6 +559,7 @@ public class Monitor : Product<uint>
     {
         InitializationDisplayType(displayType);
     }
+
     // 9 parameters: 3 for base properties, 6 for local properties
     public Monitor
         (
@@ -534,6 +576,7 @@ public class Monitor : Product<uint>
     {
         InitializationDisplayType(displayType);
     }
+
     // 10 parameters: 4 for base properties, 6 for local properties
     public Monitor
         (
@@ -551,6 +594,7 @@ public class Monitor : Product<uint>
     {
         InitializationDisplayType(displayType);
     }
+
     // 11 parameters: 5 for base properties, 6 for local properties
     public Monitor
         (
@@ -569,6 +613,7 @@ public class Monitor : Product<uint>
     {
         InitializationDisplayType(displayType);
     }
+
     // 12 parameters: 6 for base properties, 6 for local properties
     public Monitor
         (
@@ -588,7 +633,9 @@ public class Monitor : Product<uint>
     {
         InitializationDisplayType(displayType);
     }
+
     // VII. When only the local properties Model, ScreenSize, MaxResolution, RefreshRate, VideoInputs, DisplayType and AspectRatio are specified:
+
     // 8 parameters: 1 for base property, 7 for local properties
     public Monitor
         (
@@ -604,6 +651,7 @@ public class Monitor : Product<uint>
     {
         InitializationAspectRatio(aspectRatio);
     }
+
     // 9 parameters: 2 for base properties, 7 for local properties
     public Monitor
         (
@@ -620,6 +668,7 @@ public class Monitor : Product<uint>
     {
         InitializationAspectRatio(aspectRatio);
     }
+
     // 10 parameters: 3 for base properties, 7 for local properties
     public Monitor
         (
@@ -637,6 +686,7 @@ public class Monitor : Product<uint>
     {
         InitializationAspectRatio(aspectRatio);
     }
+
     // 11 parameters: 4 for base properties, 7 for local properties
     public Monitor
         (
@@ -655,6 +705,7 @@ public class Monitor : Product<uint>
     {
         InitializationAspectRatio(aspectRatio);
     }
+
     // 12 parameters: 5 for base properties, 7 for local properties
     public Monitor
         (
@@ -674,6 +725,7 @@ public class Monitor : Product<uint>
     {
         InitializationAspectRatio(aspectRatio);
     }
+
     // 13 parameters: 6 for base properties, 7 for local properties
     public Monitor
         (
@@ -696,6 +748,7 @@ public class Monitor : Product<uint>
     }
 
     // VIII. When only the local properties Model, ScreenSize, MaxResolution, RefreshRate, VideoInputs, DisplayType, AspectRatio and ContrastRatio are specified:
+
     // 9 parameters: 1 for base property, 8 for local properties
     public Monitor
         (
@@ -712,6 +765,7 @@ public class Monitor : Product<uint>
     {
         InitializationContrastRatio(contrastRatio);
     }
+
     // 10 parameters: 2 for base properties, 8 for local properties
     public Monitor
        (
@@ -729,6 +783,7 @@ public class Monitor : Product<uint>
     {
         InitializationContrastRatio(contrastRatio);
     }
+
     // 11 parameters: 3 for base properties, 8 for local properties
     public Monitor
        (
@@ -747,6 +802,7 @@ public class Monitor : Product<uint>
     {
         InitializationContrastRatio(contrastRatio);
     }
+
     // 12 parameters: 4 for base properties, 8 for local properties
     public Monitor
        (
@@ -766,6 +822,7 @@ public class Monitor : Product<uint>
     {
         InitializationContrastRatio(contrastRatio);
     }
+
     // 13 parameters: 5 for base properties, 8 for local properties
     public Monitor
        (
@@ -786,6 +843,7 @@ public class Monitor : Product<uint>
     {
         InitializationContrastRatio(contrastRatio);
     }
+
     // 14 parameters: 6 for base properties, 8 for local properties
     public Monitor
        (
@@ -807,7 +865,9 @@ public class Monitor : Product<uint>
     {
         InitializationContrastRatio(contrastRatio);
     }
+
     // IX. When only the local properties Model, ScreenSize, MaxResolution, RefreshRate, VideoInputs, DisplayType, AspectRatio, ContrastRatio and Brightness are specified:
+
     // 10 parameters: 1 for base property, 9 for local properties
     public Monitor
         (
@@ -825,6 +885,7 @@ public class Monitor : Product<uint>
     {
         InitializationBrightness(brightness);
     }
+
     // 11 parameters: 2 for base properties, 9 for local properties
     public Monitor
         (
@@ -843,6 +904,7 @@ public class Monitor : Product<uint>
     {
         InitializationBrightness(brightness);
     }
+
     // 12 parameters: 3 for base properties, 9 for local properties
     public Monitor
         (
@@ -862,6 +924,7 @@ public class Monitor : Product<uint>
     {
         InitializationBrightness(brightness);
     }
+
     // 13 parameters: 4 for base properties, 9 for local properties
     public Monitor
        (
@@ -882,6 +945,7 @@ public class Monitor : Product<uint>
     {
         InitializationBrightness(brightness);
     }
+
     // 14 parameters: 5 for base properties, 9 for local properties
     public Monitor
        (
@@ -903,6 +967,7 @@ public class Monitor : Product<uint>
     {
         InitializationBrightness(brightness);
     }
+
     // 15 parameters: 6 for base properties, 9 for local properties
     public Monitor
        (
@@ -927,6 +992,7 @@ public class Monitor : Product<uint>
     }
 
     // X. When all local properties are specified: Model, ScreenSize, MaxResolution, RefreshRate, VideoInputs, DisplayType, AspectRatio, ContrastRatio, Brightness and PixelResponseTime.
+
     // 11 parameters: 1 for base property, 10 for local properties
     public Monitor
         (
@@ -945,6 +1011,7 @@ public class Monitor : Product<uint>
     {
         InitializationPixelResponseTime(pixelResponseTime);
     }
+
     // 12 parameters: 2 for base properties, 10 for local properties
     public Monitor
         (
@@ -964,6 +1031,7 @@ public class Monitor : Product<uint>
     {
         InitializationPixelResponseTime(pixelResponseTime);
     }
+
     // 13 parameters: 3 for base properties, 10 for local properties
     public Monitor
         (
@@ -984,6 +1052,7 @@ public class Monitor : Product<uint>
     {
         InitializationPixelResponseTime(pixelResponseTime);
     }
+
     // 14 parameters: 4 for base properties, 10 for local properties
     public Monitor
         (
@@ -1005,6 +1074,7 @@ public class Monitor : Product<uint>
     {
         InitializationPixelResponseTime(pixelResponseTime);
     }
+
     // 15 parameters: 5 for base properties, 10 for local properties
     public Monitor
         (
@@ -1027,6 +1097,7 @@ public class Monitor : Product<uint>
     {
         InitializationPixelResponseTime(pixelResponseTime);
     }
+
     // 16 parameters: 6 for base properties, 10 for local properties
     public Monitor
         (
@@ -1074,6 +1145,7 @@ public class Monitor : Product<uint>
         Console.WriteLine($"Brightness: {(uint)Brightness} nits");
         Console.WriteLine($"Pixel response time: {MonitorEnums.PixelResponseTimeToString(PixelResponseTime)}");
     }
+
     public override void DisplayShortInfo()
     {
         Console.Write(

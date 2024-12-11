@@ -15,6 +15,7 @@ namespace M07FinalTask.N05Orders;
 public class Cart
 {
     // FILEDS & PROPERTIES
+
     public uint CartId { get; private set; }
     public uint CustomerId { get; private set; }
     public IDelivery Delivery { get; set; }
@@ -31,6 +32,7 @@ public class Cart
 
 
     // CONSTRUCTOR
+
     public Cart(uint customerId, uint cartId)
     {
         CartId = cartId;
@@ -89,6 +91,7 @@ public class Cart
             i?.DisplayShortInfo();
         }
     }
+
     public void CalculateTotalAmountPayable()
     {
         if (GeneralStuff.Generics.IsArrayEmpty<ProductInOrder>(ProductsInCart) == false)
@@ -121,6 +124,7 @@ public class Cart
         TotalDiscountByPromoCode = TotalCostOfProductsMinusTotalDiscountsOfProducts * (byte)PromoCode / 100;
         TotalAmountPayable = TotalCostOfProductsMinusTotalDiscountsOfProducts - TotalDiscountByPromoCode;
     }
+
     public void ClearCart()
     {
         Delivery = null;

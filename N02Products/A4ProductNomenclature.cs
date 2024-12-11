@@ -19,6 +19,7 @@ namespace M07FinalTask.N02Products
         private static ProductNomenclature? instance;
 
         // PROPERTIES
+
         // Product nomenclature:
         public Laptop[] LaptopNomenclature { get; private set; }
         public Monitor[] MonitorNomenclature { get; private set; }
@@ -44,6 +45,7 @@ namespace M07FinalTask.N02Products
         // METHODS
 
         // Target methods for product nomenclature
+
         // 1. For laptops
         public void DisplayLaptopNomenclatureFullInfo()
         {
@@ -56,6 +58,7 @@ namespace M07FinalTask.N02Products
                 }
             }
         }
+
         public void DisplayLaptopNomenclatureShortInfo()
         {
             Console.WriteLine();
@@ -83,6 +86,7 @@ namespace M07FinalTask.N02Products
                 }
             }
         }
+
         public void DisplayMonitorNomenclatureShortInfo()
         {
             Console.WriteLine();

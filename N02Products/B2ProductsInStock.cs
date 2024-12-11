@@ -20,20 +20,25 @@ namespace M07FinalTask.N02Products
         // PROPERTY
         public ProductInStock[] AllProductsInStock { get; private set; }
 
+
         // CONSTRUCTOR
+
         // 1. Helper method for constructor from Singleton pattern
         public static ProductsInStock GetAllProductsInStock()
         {
             if (instance == null) { instance = new ProductsInStock(); }
             return instance;
         }
+
         // 2. Constructor
         private ProductsInStock()
         {
             AllProductsInStock = RawData.CreateProductsForProductsInStock();
         }
 
+
         // INDEXERS
+
         // Task 18. Using indexers.
         public ProductInStock this[uint index]
         {

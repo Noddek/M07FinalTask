@@ -31,6 +31,7 @@ namespace M07FinalTask.N01RawData.Enumerations
             N6506MV_MA113,
             PHN16_72_72NX
         }
+
         public enum LaptopScreenSize : byte
         {
             NotSpecified = 0,
@@ -63,6 +64,7 @@ namespace M07FinalTask.N01RawData.Enumerations
             Intel_Core_Ultra_7_155H,
             Intel_Core_Ultra_9_185H
         }
+
         public static string LaptopProcessorToString(LaptopProcessor laptopProcessor)
         {
             switch (laptopProcessor)
@@ -108,6 +110,7 @@ namespace M07FinalTask.N01RawData.Enumerations
             GeForceRTX4080,
             GeForceRTX4090
         }
+
         public static string LaptopGPUToString(LaptopGPU laptopGPU)
         {
             switch (laptopGPU)
@@ -130,6 +133,7 @@ namespace M07FinalTask.N01RawData.Enumerations
             Windows11Professional,
             Linux
         }
+
         public static string LaptopOperatingSystemToString(LaptopOperatingSystem laptopOperatingSystem)
         {
             switch (laptopOperatingSystem)
@@ -151,6 +155,7 @@ namespace M07FinalTask.N01RawData.Enumerations
             HDD,
             HDDandSSD
         }
+
         public enum LaptopStorageCapacity : uint
         {
             NotSpecified = 0,

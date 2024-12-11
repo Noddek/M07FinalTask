@@ -50,8 +50,11 @@ namespace M07FinalTask.N20ProgramCode
             finally
             {
                 GeneralStuff.Pause(5);
-            }           
+            }
+            
             Start.StartTheProgram();
+
+            return;
         }
     }
 }

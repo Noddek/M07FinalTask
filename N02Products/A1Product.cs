@@ -40,6 +40,7 @@ public abstract class Product<TStruct> where TStruct : struct // The constraint 
     {
         Brand = brand;
     }
+
     // 2 parameters:
     public Product
         (
@@ -49,6 +50,7 @@ public abstract class Product<TStruct> where TStruct : struct // The constraint 
     {
         Category = category;
     }
+
     // 3 parameters:
     public Product
         (
@@ -59,6 +61,7 @@ public abstract class Product<TStruct> where TStruct : struct // The constraint 
     {
         ItemTitle = itemTitle;
     }
+
     // 4 parameters:
     public Product
         (
@@ -70,6 +73,7 @@ public abstract class Product<TStruct> where TStruct : struct // The constraint 
     {
         Description = description;
     }
+
     // 5 parameters:
     public Product
         (
@@ -82,6 +86,7 @@ public abstract class Product<TStruct> where TStruct : struct // The constraint 
     {
         ReleaseYear = releaseYear;
     }
+
     // 6 parameters:
     public Product
         (
@@ -111,6 +116,7 @@ public abstract class Product<TStruct> where TStruct : struct // The constraint 
         Console.WriteLine($"Release year: {(uint)ReleaseYear}");
         Console.WriteLine($"Unit of measurement: {UnitOfMeasurement}");
     }
+
     // Task 2.2. An example of using abstract class members: ABSTRACT METHOD.
     public abstract void DisplayShortInfo();
 }

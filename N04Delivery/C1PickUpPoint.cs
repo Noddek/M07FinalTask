@@ -13,20 +13,24 @@ namespace M07FinalTask.N04Delivery;
 public class PickUpPoint
 {
     // FIELDS & PROPERTIES
+
     private string Name { get { return "Pick-up point"; } }
     public Address Address { get; private set; }
 
     // CONSTRUCTOR
+
     public PickUpPoint(Address address)
     {
         Address = address;
     }
 
     // METHODS
+
     public string PickUpPointInfoToString()
     {
         return $"{Name}: {Address.AddressToString()}";
     }
+
     public string PickUpPointAddressToString()
     {
         return $"{Address.AddressToString()}";

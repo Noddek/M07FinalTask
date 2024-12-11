@@ -14,14 +14,17 @@ namespace M07FinalTask.N02Products
     public class Package
     {
         // STATIC FIELDS
+
         public static Package[] allPackages = new Package[100];
 
         // FIELDS & PROPERTIES
+
         public ProductInStock[] PackageOfProductsInStock { get; private set; }
         public byte SpecialDiscountPercentage { get; private set; } = 10; // Default package discount percentage
 
 
         // CONSTRUCTORS --- Start of the section
+
         public Package (ProductInStock firstProductInStock, ProductInStock secondProductInStock)
         {
             PackageOfProductsInStock = new ProductInStock[2] { firstProductInStock, secondProductInStock };
@@ -35,11 +38,13 @@ namespace M07FinalTask.N02Products
                 }
             }
         }
+
         public Package (ProductInStock firstProductInStock, ProductInStock secondProductInStock, byte specialDiscountPercentage)
             : this (firstProductInStock, secondProductInStock)
         {
             SpecialDiscountPercentage = specialDiscountPercentage;
         }
+
         // CONSTRUCTORS --- End of the section
 
 

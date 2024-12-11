@@ -11,6 +11,7 @@ namespace M07FinalTask.N11Contacts;
 public class Address
 {
     // FIELDS & PROPERTIES
+
     public string? Country { get; private set; }
     public string? PostalCode { get; private set; }
     public string? Region { get; private set; }
@@ -21,23 +22,29 @@ public class Address
     public string? Apartment { get; private set; }
     public string? NameOfAddressee { get; private set; }
 
+
     // CONSTRUCTORS
+
     // Only some constructors are implemented
+
     public Address() { }
+
     public Address(string city, string street, string buildingNumber)
     {
         City = city;
         Street = street;
         BuildingNumber = buildingNumber;
     }
+
     public Address(string city, string street, string buildingNumber, string apartment) : this(city, street, buildingNumber)
     {
         Apartment = apartment;
     }
 
-    // METHODS
-    // 1. Helper methods
 
+    // METHODS
+
+    // 1. Helper methods
 
     // 2. Target methods
     public string? AddressToString()

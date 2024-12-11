@@ -44,12 +44,14 @@ public static class CommonEnums
         ViewSonic,
         Xiaomi
     }
+
     public enum ProductCategory : byte
     {
         NotSpecified = 0,
         Laptop,
         Monitor
     }
+
     public enum ReleaseYear : uint
     {
         NotSpecified = 0,
@@ -73,6 +75,7 @@ public static class CommonEnums
         ForRepacking,
         ForRefurbishment
     }
+    
     public static string ProductConditionToString(ProductCondition productCondition)
     {
         switch (productCondition)
@@ -105,6 +108,7 @@ public static class CommonEnums
         _10,
         _0
     }
+
     public static string VATPercentageToString(VATPercentage VATPercentage)
     {
         switch (VATPercentage)
@@ -143,6 +147,7 @@ public static class CommonEnums
         Cancelled,
         Refunded
     }
+    
     public static string OrderStatusToString (OrderStatus orderStatus)
     {
         switch (orderStatus)
@@ -171,6 +176,7 @@ public static class CommonEnums
         DISC15 = 15,
         DISC20 = 20
     }
+    
     public static string PromoCodeToString(PromoCode promoCode)
     {
         switch (promoCode)
@@ -205,6 +211,7 @@ public static class CommonEnums
         BankCard,
         Cash
     }
+    
     public static string PaymentMethodToString(PaymentMethod paymentMethod)
     {
         switch (paymentMethod)

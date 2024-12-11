@@ -13,6 +13,7 @@ namespace M07FinalTask.N02Products;
 public static class SalesCatalog
 {
     // FIELDS
+
     // All products for sale can be accessed through a field or through a method.
     // Here through the field, through the method below.
     public static ProductInStock[] getAllProductsForSale = GetAllProductsForSale();

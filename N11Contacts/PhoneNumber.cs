@@ -11,12 +11,14 @@ namespace M07FinalTask.N11Contacts;
 public class PhoneNumber
 {
     // FIELDS & PROPERTIES
+
     public ushort CountryCode { get; private set; }
     public byte TrunkPrefix { get; private set; }
     public ushort AreaCode { get; private set; }
     public uint SubscriberNumber { get; private set; }
 
     // CONSTRUCTOR
+
     public PhoneNumber
         (
             ushort countryCode,
@@ -32,7 +34,9 @@ public class PhoneNumber
     }
 
     // METHODS
+
     // 1. Helper methods
+
     private string SubscriberNumberToString()
     {
         string originalString = Convert.ToString(SubscriberNumber);
@@ -47,6 +51,7 @@ public class PhoneNumber
     }
 
     // 2. Target methods
+
     public void Display()
     {
         if (CountryCode != 0 && AreaCode != 0 && SubscriberNumber != 0)
@@ -59,6 +64,7 @@ public class PhoneNumber
         }
 
     }
+    
     public string PhoneNumberToString()
     {
         if (CountryCode != 0 && AreaCode != 0 && SubscriberNumber != 0)

@@ -35,6 +35,7 @@ public class BankCardPayment : Payment
         PaymentId = ++BankCardPaymentCounter;
         BankCardInfo = bankCardInfo;
     }
+
     // 2. PurchaseReceiptNumber property is specified in addition to the 1st constructor parameters:
     public BankCardPayment
         (
@@ -51,6 +52,7 @@ public class BankCardPayment : Payment
         PaymentId = ++BankCardPaymentCounter;
         BankCardInfo = bankCardInfo;
     }
+
     // 3. TransactionDetails property is specified in addition to the 1st constructor parameters:
     public BankCardPayment
         (
@@ -66,6 +68,7 @@ public class BankCardPayment : Payment
         PaymentId = ++BankCardPaymentCounter;
         BankCardInfo = bankCardInfo;
     }
+
     // 4. PurchaseReceiptNumber & TransactionDetails properties are specified in addition to the 1st constructor parameters:
     public BankCardPayment
         (

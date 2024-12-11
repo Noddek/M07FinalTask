@@ -12,11 +12,13 @@ namespace M07FinalTask.N20ProgramCode
     public static class Start
     {
         // METHODS
+
         public static void StartTheProgram()
         {
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("\nPlease select the role (enter the appropriate number): \n\n\t1. I'm the mentor. \n\t2. I'm a customer. \n\t3. I'm a store manager.\n");
             Console.ResetColor();
+
             byte startStep = 0;
             for (byte i = 0, j = 5; i <= j; ++i)
             {

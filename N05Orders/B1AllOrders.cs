@@ -17,8 +17,8 @@ namespace M07FinalTask.N05Orders
         private static AllOrders? instance;
 
         // PROPERTIES
-        public Order[] AllOrdersCollection { get; private set; }
 
+        public Order[] AllOrdersCollection { get; private set; }
 
 
         // CONSTRUCTOR
@@ -45,8 +45,8 @@ namespace M07FinalTask.N05Orders
         }
 
 
-
         // METHODS
+
         public static void SaveToAllOrdersCollection (Order order)
         {
             AllOrders allOrders = GetAllOrdersCollection();
@@ -63,6 +63,7 @@ namespace M07FinalTask.N05Orders
 
 
         // INDEXERS
+
         // Task 18. Using indexers.
         // 1st indexer:
         public Order this[byte index]
@@ -86,6 +87,7 @@ namespace M07FinalTask.N05Orders
                 }
             }
         }
+
         // 2nd indexer, overloading (returns the order by order number):
         public Order this[uint orderNumber]
         {

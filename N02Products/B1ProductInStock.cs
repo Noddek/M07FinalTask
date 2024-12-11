@@ -16,6 +16,7 @@ namespace M07FinalTask.N02Products;
 public class ProductInStock
 {
     // FIELDS & PROPERTIES
+
     public Product<uint> Product { get; private set; }
         /*
         THE PROBLEM:
@@ -149,6 +150,7 @@ public class ProductInStock
         Console.WriteLine($"Quantity in stock: {QuantityInStock}");
         Console.WriteLine($"Availability: {IsAvaiableForSaleToString()}");
     }
+
     public void DisplayShortInfo()
     {
         Product?.DisplayShortInfo();
@@ -167,6 +169,7 @@ public class ProductInStock
             }
         }
     }
+
     public static void DisplayShortInfo(ProductInStock[] array)
     {
         Console.WriteLine("\n-----------------------------------------------");

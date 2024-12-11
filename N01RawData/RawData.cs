@@ -1020,7 +1020,8 @@ public static class RawData
     /// <returns>The array of 2 shops with pre-specified data</returns>
     public static Shop[] CreateShops()
     {
-        Shop[] shops = {
+        Shop[] shops = 
+        {
             new Shop
             (
                 "Modern Tech",
@@ -1060,8 +1061,15 @@ public static class RawData
 
 
 
-    // RAW DATA FOR THE ORDERS ------------------------------------------------
+    // RAW DATA FOR THE ORDERS --------------------------------------------------
     // --------------------------------------------------------------------------
+
+    // Method 7.
+
+    /// <summary>
+    /// The method creates an array of orders for the program test
+    /// </summary>
+    /// <returns>The array of 2 orders with pre-specified data</returns>
     public static Order[] CreateOrdersForTest()
     {
         Order[] orders =

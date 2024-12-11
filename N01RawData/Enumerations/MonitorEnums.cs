@@ -34,6 +34,7 @@ namespace M07FinalTask.N01RawData.Enumerations
             XG27ACS_W,
             XV272KLVbmiipruzx
         }
+
         public enum MonitorScreenSize : uint
         {
             NotSpecified = 0,
@@ -57,6 +58,7 @@ namespace M07FinalTask.N01RawData.Enumerations
             _49 = 490,
             _55 = 550
         }
+
         public enum MaxResolution : uint
         {
             NotSpecified = 0,
@@ -67,6 +69,7 @@ namespace M07FinalTask.N01RawData.Enumerations
             _3840x2160 = 38402160,
             _5120x1440 = 51201440
         }
+
         public enum RefreshRate : uint
         {
             NotSpecified = 0,
@@ -105,6 +108,7 @@ namespace M07FinalTask.N01RawData.Enumerations
             DisplayPort14a_HDMI21_USBTypeC,
             HDMI20_USBTypeC
         }
+
         public static string VideoInputsToString(VideoInputs videoInputs)
         {
             switch (videoInputs)
@@ -144,6 +148,7 @@ namespace M07FinalTask.N01RawData.Enumerations
             _21_9 = 219,
             _32_9 = 329
         }
+
         public static string AspectRatioToString(AspectRatio aspectRatio)
         {
             switch ((uint)aspectRatio)
@@ -172,6 +177,7 @@ namespace M07FinalTask.N01RawData.Enumerations
             _1200000_1 = 12000001,
             _1500000_1 = 15000001
         }
+
         public static string ContrastRatioToString(ContrastRatio contrastRatio)
         {
             switch ((uint)contrastRatio)
@@ -225,6 +231,7 @@ namespace M07FinalTask.N01RawData.Enumerations
             _4 = 4,
             _5 = 5,
         }
+
         public static string PixelResponseTimeToString(PixelResponseTime pixelResponseTime)
         {
             switch (pixelResponseTime)

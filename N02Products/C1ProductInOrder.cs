@@ -13,6 +13,7 @@ namespace M07FinalTask.N02Products;
 public class ProductInOrder
 {
     // FIELDS & PROPERTIES
+
     public Product<uint> Product { get; private set; }
     public CommonEnums.ProductCondition ProductCondition { get; private set; }
     public decimal Price { get; private set; }
@@ -20,7 +21,8 @@ public class ProductInOrder
     public CommonEnums.VATPercentage VATPercentage { get; private set; }
     public ushort QuantityInOrder { get; private set; } = 0;
 
-    // CONSTRUCTOR 
+    // CONSTRUCTOR
+
     public ProductInOrder(ProductInStock productFromSalesCatalog)
     {
         Product = productFromSalesCatalog.Product;
@@ -29,12 +31,14 @@ public class ProductInOrder
         DiscountPercentage = productFromSalesCatalog.DiscountPercentage;
         VATPercentage = productFromSalesCatalog.VATPercentage;
     }
+
     public ProductInOrder(ProductInStock productFromSalesCatalog, ushort quantityInOrder) : this(productFromSalesCatalog)
     {
         QuantityInOrder = quantityInOrder;
     }
 
     // METHODS
+
     public void DisplayFullInfo()
     {
         Product?.DisplayFullInfo();
@@ -44,6 +48,7 @@ public class ProductInOrder
         Console.WriteLine($"VAT: {CommonEnums.VATPercentageToString(VATPercentage)}");
         Console.WriteLine($"Quantity in order: {QuantityInOrder}");
     }
+
     public void DisplayShortInfo()
     {
         Product?.DisplayShortInfo();

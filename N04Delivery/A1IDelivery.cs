@@ -15,10 +15,12 @@ namespace M07FinalTask.N04Delivery;
 public interface IDelivery
 {
     // PROPERTIES
+
     public string Type { get; }
     public DateTime? SendingDate { get; set; }
     public DateTime? FinishDate { get; set; }
 
     // METHODS
+
     string InfoToString();
 }

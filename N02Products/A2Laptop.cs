@@ -39,11 +39,13 @@ public class Laptop : Product<uint>
         ItemNumber = ++LaptopItemNumberCounter;
         Model = model;
     }
+
     private void InitializationFirst3Properties(LaptopEnums.LaptopModel model, LaptopEnums.LaptopScreenSize screenSize)
     {
         InitializationFirst2Properties(model);
         ScreenSize = screenSize;
     }
+
     private void InitializationFirst4Properties
         (
             LaptopEnums.LaptopModel model,
@@ -54,6 +56,7 @@ public class Laptop : Product<uint>
         InitializationFirst3Properties(model, screenSize);
         Processor = processor;
     }
+
     private void InitializationFirst5Properties
         (
             LaptopEnums.LaptopModel model,
@@ -65,6 +68,7 @@ public class Laptop : Product<uint>
         InitializationFirst4Properties(model, screenSize, processor);
         this.RAMSize = RAMSize;
     }
+
     private void InitializationFirst6Properties
         (
             LaptopEnums.LaptopModel model,
@@ -77,6 +81,7 @@ public class Laptop : Product<uint>
         InitializationFirst5Properties(model, screenSize, processor, RAMSize);
         this.GPU = GPU;
     }
+
     private void InitializationFirst7Properties
         (
             LaptopEnums.LaptopModel model,
@@ -90,6 +95,7 @@ public class Laptop : Product<uint>
         InitializationFirst6Properties(model, screenSize, processor, RAMSize, GPU);
         OperatingSystem = operatingSystem;
     }
+
     private void InitializationFirst8Properties
         (
             LaptopEnums.LaptopModel model,
@@ -104,6 +110,7 @@ public class Laptop : Product<uint>
         InitializationFirst7Properties(model, screenSize, processor, RAMSize, GPU, operatingSystem);
         StorageType = storageType;
     }
+
     private void InitializationAll9Properties
         (
             LaptopEnums.LaptopModel model,
@@ -121,17 +128,21 @@ public class Laptop : Product<uint>
     }
 
     // B. Constructors:
+
     // I. When only the local property Model is specified:
+
     // 2 parameters: 1 for base property, 1 for local property
     public Laptop(CommonEnums.Brand brand, LaptopEnums.LaptopModel model) : base(brand)
     {
         InitializationFirst2Properties(model);
     }
+
     // 3 parameters: 2 for base properties, 1 for local property
     public Laptop(CommonEnums.Brand brand, CommonEnums.ProductCategory category, LaptopEnums.LaptopModel model) : base(brand, category)
     {
         InitializationFirst2Properties(model);
     }
+
     // 4 parameters: 3 for base properties, 1 for local property
     public Laptop
         (
@@ -143,6 +154,7 @@ public class Laptop : Product<uint>
     {
         InitializationFirst2Properties(model);
     }
+
     // 5 parameters: 4 for base properties, 1 for local property
     public Laptop
         (
@@ -155,6 +167,7 @@ public class Laptop : Product<uint>
     {
         InitializationFirst2Properties(model);
     }
+
     // 6 parameters: 5 for base properties, 1 for local property
     public Laptop
         (
@@ -168,6 +181,7 @@ public class Laptop : Product<uint>
     {
         InitializationFirst2Properties(model);
     }
+
     // 7 parameters: 6 for base properties, 1 for local property
     public Laptop
         (
@@ -184,11 +198,13 @@ public class Laptop : Product<uint>
     }
 
     // II. When only the local properties Model and ScreenSize are specified:
+
     // 3 parameters: 1 for base property, 2 for local properties
     public Laptop(CommonEnums.Brand brand, LaptopEnums.LaptopModel model, LaptopEnums.LaptopScreenSize screenSize) : base(brand)
     {
         InitializationFirst3Properties(model, screenSize);
     }
+
     // 4 parameters: 2 for base properties, 2 for local properties
     public Laptop
         (
@@ -200,6 +216,7 @@ public class Laptop : Product<uint>
     {
         InitializationFirst3Properties(model, screenSize);
     }
+
     // 5 parameters: 3 for base properties, 2 for local properties
     public Laptop
         (
@@ -212,6 +229,7 @@ public class Laptop : Product<uint>
     {
         InitializationFirst3Properties(model, screenSize);
     }
+
     // 6 parameters: 4 for base properties, 2 for local properties
     public Laptop
         (
@@ -225,6 +243,7 @@ public class Laptop : Product<uint>
     {
         InitializationFirst3Properties(model, screenSize);
     }
+
     // 7 parameters: 5 for base properties, 2 for local properties
     public Laptop
         (
@@ -239,6 +258,7 @@ public class Laptop : Product<uint>
     {
         InitializationFirst3Properties(model, screenSize);
     }
+
     // 8 parameters: 6 for base properties, 2 for local properties
     public Laptop
         (
@@ -256,6 +276,7 @@ public class Laptop : Product<uint>
     }
 
     // III. When only the local properties Model, ScreenSize and Processor are specified:
+
     // 4 parameters: 1 for base property, 3 for local properties
     public Laptop
         (
@@ -267,6 +288,7 @@ public class Laptop : Product<uint>
     {
         InitializationFirst4Properties(model, screenSize, processor);
     }
+
     // 5 parameters: 2 for base properties, 3 for local properties
     public Laptop
         (
@@ -279,6 +301,7 @@ public class Laptop : Product<uint>
     {
         InitializationFirst4Properties(model, screenSize, processor);
     }
+
     // 6 parameters: 3 for base properties, 3 for local properties
     public Laptop
         (
@@ -292,6 +315,7 @@ public class Laptop : Product<uint>
     {
         InitializationFirst4Properties(model, screenSize, processor);
     }
+
     // 7 parameters: 4 for base properties, 3 for local properties
     public Laptop
         (
@@ -306,6 +330,7 @@ public class Laptop : Product<uint>
     {
         InitializationFirst4Properties(model, screenSize, processor);
     }
+
     // 8 parameters: 5 for base properties, 3 for local properties
     public Laptop
         (
@@ -321,6 +346,7 @@ public class Laptop : Product<uint>
     {
         InitializationFirst4Properties(model, screenSize, processor);
     }
+
     // 9 parameters: 6 for base properties, 3 for local properties
     public Laptop
         (
@@ -339,6 +365,7 @@ public class Laptop : Product<uint>
     }
 
     // IV. When only the local properties Model, ScreenSize, Processor and RAMSize are specified:
+
     // 5 parameters: 1 for base property, 4 for local properties
     public Laptop
         (
@@ -351,6 +378,7 @@ public class Laptop : Product<uint>
     {
         InitializationFirst5Properties(model, screenSize, processor, RAMSize);
     }
+
     // 6 parameters: 2 for base properties, 4 for local properties
     public Laptop
         (
@@ -364,6 +392,7 @@ public class Laptop : Product<uint>
     {
         InitializationFirst5Properties(model, screenSize, processor, RAMSize);
     }
+
     // 7 parameters: 3 for base properties, 4 for local properties
     public Laptop
         (
@@ -378,6 +407,7 @@ public class Laptop : Product<uint>
     {
         InitializationFirst5Properties(model, screenSize, processor, RAMSize);
     }
+
     // 8 parameters: 4 for base properties, 4 for local properties
     public Laptop
         (
@@ -393,6 +423,7 @@ public class Laptop : Product<uint>
     {
         InitializationFirst5Properties(model, screenSize, processor, RAMSize);
     }
+
     // 9 parameters: 5 for base properties, 4 for local properties
     public Laptop
         (
@@ -409,6 +440,7 @@ public class Laptop : Product<uint>
     {
         InitializationFirst5Properties(model, screenSize, processor, RAMSize);
     }
+
     // 10 parameters: 6 for base properties, 4 for local properties
     public Laptop
         (
@@ -428,6 +460,7 @@ public class Laptop : Product<uint>
     }
 
     // V. When only the local properties Model, ScreenSize, Processor, RAMSize and GPU are specified:
+
     // 6 parameters: 1 for base property, 5 for local properties
     public Laptop
         (
@@ -441,6 +474,7 @@ public class Laptop : Product<uint>
     {
         InitializationFirst6Properties(model, screenSize, processor, RAMSize, GPU);
     }
+
     // 7 parameters: 2 for base properties, 5 for local properties
     public Laptop
         (
@@ -455,6 +489,7 @@ public class Laptop : Product<uint>
     {
         InitializationFirst6Properties(model, screenSize, processor, RAMSize, GPU);
     }
+
     // 8 parameters: 3 for base properties, 5 for local properties
     public Laptop
         (
@@ -470,6 +505,7 @@ public class Laptop : Product<uint>
     {
         InitializationFirst6Properties(model, screenSize, processor, RAMSize, GPU);
     }
+
     // 9 parameters: 4 for base properties, 5 for local properties
     public Laptop
         (
@@ -486,6 +522,7 @@ public class Laptop : Product<uint>
     {
         InitializationFirst6Properties(model, screenSize, processor, RAMSize, GPU);
     }
+
     // 10 parameters: 5 for base properties, 5 for local properties
     public Laptop
         (
@@ -503,6 +540,7 @@ public class Laptop : Product<uint>
     {
         InitializationFirst6Properties(model, screenSize, processor, RAMSize, GPU);
     }
+
     // 11 parameters: 6 for base properties, 5 for local properties
     public Laptop
         (
@@ -523,6 +561,7 @@ public class Laptop : Product<uint>
     }
 
     // VI. When only the local properties Model, ScreenSize, Processor, RAMSize, GPU and OperatingSystem are specified:
+
     // 7 parameters: 1 for base property, 6 for local properties
     public Laptop
         (
@@ -537,6 +576,7 @@ public class Laptop : Product<uint>
     {
         InitializationFirst7Properties(model, screenSize, processor, RAMSize, GPU, operatingSystem);
     }
+
     // 8 parameters: 2 for base properties, 6 for local properties
     public Laptop
         (
@@ -552,6 +592,7 @@ public class Laptop : Product<uint>
     {
         InitializationFirst7Properties(model, screenSize, processor, RAMSize, GPU, operatingSystem);
     }
+
     // 9 parameters: 3 for base properties, 6 for local properties
     public Laptop
         (
@@ -568,6 +609,7 @@ public class Laptop : Product<uint>
     {
         InitializationFirst7Properties(model, screenSize, processor, RAMSize, GPU, operatingSystem);
     }
+
     // 10 parameters: 4 for base properties, 6 for local properties
     public Laptop
         (
@@ -585,6 +627,7 @@ public class Laptop : Product<uint>
     {
         InitializationFirst7Properties(model, screenSize, processor, RAMSize, GPU, operatingSystem);
     }
+
     // 11 parameters: 5 for base properties, 6 for local properties
     public Laptop
         (
@@ -603,6 +646,7 @@ public class Laptop : Product<uint>
     {
         InitializationFirst7Properties(model, screenSize, processor, RAMSize, GPU, operatingSystem);
     }
+
     // 12 parameters: 6 for base properties, 6 for local properties
     public Laptop
         (
@@ -624,6 +668,7 @@ public class Laptop : Product<uint>
     }
 
     // VII. When only the local properties Model, ScreenSize, Processor, RAMSize, GPU, OperatingSystem and StorageType are specified:
+
     // 8 parameters: 1 for base property, 7 for local properties
     public Laptop
         (
@@ -639,6 +684,7 @@ public class Laptop : Product<uint>
     {
         InitializationFirst8Properties(model, screenSize, processor, RAMSize, GPU, operatingSystem, storageType);
     }
+
     // 9 parameters: 2 for base properties, 7 for local properties
     public Laptop
         (
@@ -655,6 +701,7 @@ public class Laptop : Product<uint>
     {
         InitializationFirst8Properties(model, screenSize, processor, RAMSize, GPU, operatingSystem, storageType);
     }
+
     // 10 parameters: 3 for base properties, 7 for local properties
     public Laptop
         (
@@ -672,6 +719,7 @@ public class Laptop : Product<uint>
     {
         InitializationFirst8Properties(model, screenSize, processor, RAMSize, GPU, operatingSystem, storageType);
     }
+
     // 11 parameters: 4 for base properties, 7 for local properties
     public Laptop
         (
@@ -690,6 +738,7 @@ public class Laptop : Product<uint>
     {
         InitializationFirst8Properties(model, screenSize, processor, RAMSize, GPU, operatingSystem, storageType);
     }
+
     // 12 parameters: 5 for base properties, 7 for local properties
     public Laptop
         (
@@ -709,6 +758,7 @@ public class Laptop : Product<uint>
     {
         InitializationFirst8Properties(model, screenSize, processor, RAMSize, GPU, operatingSystem, storageType);
     }
+
     // 13 parameters: 6 for base properties, 7 for local properties
     public Laptop
         (
@@ -731,6 +781,7 @@ public class Laptop : Product<uint>
     }
 
     // VIII. When all local properties are specified: Model, ScreenSize, Processor, RAMSize, GPU, OperatingSystem, StorageType, StorageCapacity
+
     // 9 parameters: 1 for base property, 8 for local properties
     public Laptop
         (
@@ -747,6 +798,7 @@ public class Laptop : Product<uint>
     {
         InitializationAll9Properties(model, screenSize, processor, RAMSize, GPU, operatingSystem, storageType, storageCapacity);
     }
+
     // 10 parameters: 2 for base properties, 8 for local properties
     public Laptop
         (
@@ -764,6 +816,7 @@ public class Laptop : Product<uint>
     {
         InitializationAll9Properties(model, screenSize, processor, RAMSize, GPU, operatingSystem, storageType, storageCapacity);
     }
+
     // 11 parameters: 3 for base properties, 8 for local properties
     public Laptop
         (
@@ -782,6 +835,7 @@ public class Laptop : Product<uint>
     {
         InitializationAll9Properties(model, screenSize, processor, RAMSize, GPU, operatingSystem, storageType, storageCapacity);
     }
+
     // 12 parameters: 4 for base properties, 8 for local properties
     public Laptop
         (
@@ -801,6 +855,7 @@ public class Laptop : Product<uint>
     {
         InitializationAll9Properties(model, screenSize, processor, RAMSize, GPU, operatingSystem, storageType, storageCapacity);
     }
+
     // 13 parameters: 5 for base properties, 8 for local properties
     public Laptop
         (
@@ -821,6 +876,7 @@ public class Laptop : Product<uint>
     {
         InitializationAll9Properties(model, screenSize, processor, RAMSize, GPU, operatingSystem, storageType, storageCapacity);
     }
+
     // 14 parameters: 6 for base properties, 8 for local properties
     public Laptop
         (
@@ -844,6 +900,7 @@ public class Laptop : Product<uint>
     }
 
     // CONSTRUCTORS --- End of the section
+
 
 
     // METHODS

@@ -34,6 +34,7 @@ namespace M07FinalTask.N20ProgramCode
         public static void ProductOrdering()
         {
             // GREETING THE CUSTOMER
+
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine($"\n\nHello, {testIndividualCustomer.Name}! \n\nThat's your customer profile:\n");
             testIndividualCustomer.DisplayFullInfo();
@@ -94,7 +95,7 @@ namespace M07FinalTask.N20ProgramCode
                                 {
                                     Console.WriteLine($"\tToo many tries. The program is closed.");
                                     GeneralStuff.PauseAndRestartTheProgram(10);
-                                    return;
+                                    return; // In such places we should remember to write return; to exit the void-method.
                                 }
                                 else
                                 {

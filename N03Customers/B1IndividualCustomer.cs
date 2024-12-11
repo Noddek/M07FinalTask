@@ -14,12 +14,14 @@ namespace M07FinalTask.N03Customers;
 public class IndividualCustomer : Customer
 {
     // FIELDS & PROPERTIES
+
     private static uint IndividualCustomerIdCounter = 800000;
     public override uint CustomerId { get; protected set; }
     public override uint CartId { get; protected set; }
 
     // Task 4.2. An example of using properties override.
     // Task 14. Using properties with logic in get and/or set blocks.
+
     private string login;
     public override string Login
     {
@@ -43,6 +45,7 @@ public class IndividualCustomer : Customer
             }
         }
     }
+
     private string password;
     public override string Password
     {
@@ -73,7 +76,9 @@ public class IndividualCustomer : Customer
     public PhoneNumber PersonalPhoneNumber { get; private set; }
     public EMail PersonalEMail { get; private set; }
 
+
     // CONSTRUCTORS
+
     public IndividualCustomer
         (
             string login,
@@ -93,7 +98,9 @@ public class IndividualCustomer : Customer
         PersonalEMail = personalEMail;
     }
 
+
     // METHODS
+
     public override void DisplayFullInfo()
     {
         Console.WriteLine($"\tCustomer Id: {CustomerId}");

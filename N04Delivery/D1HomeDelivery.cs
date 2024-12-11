@@ -13,6 +13,7 @@ namespace M07FinalTask.N04Delivery;
 public class HomeDelivery : IDelivery
 {
     // FIELDS & PROPERTIES
+
     public string Type { get { return "Home delivery"; } }
     public DateTime? SendingDate { get; set; }
     public DateTime? FinishDate { get; set; }
@@ -21,11 +22,13 @@ public class HomeDelivery : IDelivery
 
 
     // CONSTRUCTOR
+
     public HomeDelivery(string name, Address address)
     {
         RecipientName = name;
         Address = address;
     }
+
 
     // METHODS
 
